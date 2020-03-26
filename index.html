@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yumeoji-Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/680af7b442.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="grobalNavi">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://twitter.com/@easyuto1002"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+
+    <header>
+    <h1>Portfolio</h1>
+
+    <button type="button" class="btn hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://twitter.com/@easyuto1002"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </nav>
+    </header>
+
+
+    <figure class="tokyo">
+      <img src="tokyo.jpg" alt="">
+    </figure>
+
+    <h1 id="main_title">Welcome to my Portfolio</h1>
+
+    <div class="container">
+    <section class="about">
+      <h2><a name="about">About</a></h2>
+      <div class="contents">
+        <figure>
+          <img src="profile.jpg" alt="">
+        </figure>
+        <div class="contents_child">
+          <h3>Profile</h3>
+          <ul>
+            <li>-Yumeoji</li>
+            <li>-20歳</li>
+            <li>-国公立大学工学部</li>
+          </ul>
+        </div>
+        <div class="contents_child">
+          <h3>Skill</h3>
+          <ul>
+            <li>html,css</li>
+            <li>jquery</li>
+            <li>python</li>
+            <li>Ruby,Rails</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <h2><a name="works">Works</a></h2>
+      <div class="work_contents">
+      <article>
+          <a href="portfolio.html"><img src="tokyo.jpg" alt=""></a>
+      </article>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2><a name="services">Services</a></h2>
+      <p>Webサイト制作、レスポンシブ対応などWebサイト全般についてはお任せください。</p>
+      <div class="service_contents">
+        <article class="regulation_m">
+            <h3>ディレクション</h3>
+            <h4>DIRECTION</h4>
+            <i class="fas fa-pencil-alt fa-3x regulation_s"></i>
+            <p>お客様の要望をヒアリングし、現状の問題点を洗い出し、効果的なプランを作成いたします。制作ではデザインに入る前の事前の準備が特に重要になります。何が必要で何が必要でないのかを判断し、費用対効果の高いWebサイトを作るための土台を作ります。</p>
+        </article>
+        <article class="regulation_m">
+            <h3>デザイン</h3>
+            <h4>DESIGN</h4>
+            <i class="fas fa-mouse fa-3x regulation_s"></i>
+            <p>ヒアリングに基づいたプランに沿って、デザインを作成いたします。人の使うものであることを常に意識して、使う人が迷わない、目的を達成できるデザインを心がけています。インターフェースの重要性が増す中でデザインの役割を理解し、そのプランに最適な提案をさせていただきます。</p>
+        </article>
+        <article class="regulation_m">
+            <h3>コーディング</h3>
+            <h4>CODING</h4>
+            <i class="far fa-keyboard fa-3x regulation_s"></i>
+            <p>デザインの意図を理解し、動きや効果を適切に使用することでWebサイトの仕上がりは大きく変わります。スマートフォンサイト、ワードプレスを使用した更新性の高いサイト、Javascriptを使用した動きのあるサイトなど、様々なサイトのコーディングを行っております。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2><a name="contact">Contact</a></h2>
+      <p>お仕事依頼やご質問などお気軽にお問い合わせください。</p>
+      <form class="clearfix" netlify>
+        <div class="contact_contents">
+          <div class="form-group name">
+              <label class="float-left" for="rendou">名前：</label>
+              <input id="rendou" type="text" class="form-control" name="yourname" placeholder="山田太郎">
+          </div>
+          <div class="form-group email">
+              <label class="float-left" for="mail">メール：</label>
+              <input id="mail" type="email" class="form-control" name="mail" placeholder="example@example.com">
+          </div>
+          <div class="form-group">
+              <label class="float-left" for="subject">用件：</label>
+              <input id="subject" type="text" class="form-control" name="subject">
+          </div>
+          <div class="form-group">
+              <label class="float-left" for="message">メッセージ：</label>
+              <textarea id="message" type="text" class="form-control" name="message"></textarea>
+          </div>
+        </div>
+
+        <button class="d-block my-5 btn btn-primary" type="submit">送信</button>
+      </form>
+    </section>
+    </div>
+
+    <footer>© 2020 Yumeoji All rights reserved.</footer>
+
+    <script src="portfolio.js"></script>
+
+  </body>
+</html>
