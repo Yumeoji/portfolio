@@ -193,6 +193,7 @@ section h2 a{
   width:160px;
   height:160px;
   object-fit: cover;
+  border: 2px solid #253147;
 }
 
 .about h3{
